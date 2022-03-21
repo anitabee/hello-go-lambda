@@ -13,7 +13,7 @@ Handler function example
 3. Run `go mod tidy`
 4. `docker build -f Dockerfile -t hello-world .`
 5. Create ECR repository and use push command instructions to deploy over aws cli
-6. Create function using container image and select uploaded ECR repository
+6. Create AWS Lambda function selecting Container image option and select uploaded ECR repository
 7. Create test using:
     ```json
         {
@@ -31,7 +31,7 @@ GOOS=linux go build main.go
 zip function.zip main
 ```
 
-2. Create function selecting Author from scratch and select GO 1.x runtime
+2. Create function selecting Author from scratch option and select GO 1.x runtime
 3. Upload zip file from first step
 4. Create test using:
     ```json
